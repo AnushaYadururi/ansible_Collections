@@ -4,7 +4,7 @@
     name: "ansible-instance"
     # key_name: "prod-ssh-key"
     vpc_subnet_id: subnet-08c5d24a51fa47ecb
-    instance_type: t2.micro
+    instance_type: "{{ type }}"
     security_group: default
     region: us-east-1
     aws_access_key: "{{ anusha }}"  # From vault
